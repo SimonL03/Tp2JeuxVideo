@@ -37,6 +37,9 @@ public class LevelManager : MonoBehaviour
         SceneManager.LoadScene("Level01");
     }
 
+public void LoadExterieur(){  
+        SceneManager.LoadScene("Exterieur");
+    }
     public void LoadMaison1(){  
         SceneManager.LoadScene("Maison1");
     }
