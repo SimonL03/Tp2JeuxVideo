@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 
-public class TeleMaison1 : MonoBehaviour
+public class TeleportExterieur : MonoBehaviour
 {
 
     private LevelManager _levelManager;
@@ -14,7 +14,7 @@ public class TeleMaison1 : MonoBehaviour
         _levelManager = LevelManager.Instance;
     }
 
-    private void OnTrigger(Collider other)
+    private void OnTriggerStay(Collider other)
    {
     _levelManager.LoadExterieur();
    }
