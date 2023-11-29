@@ -435,11 +435,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 7540295379579874239}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fdc434e5e927a4adebfcbb787ec103fb, type: 3}
+  m_Script: {fileID: 11500000, guid: a57c5a392002e96478f22120a3ea98a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _loaderCanvas: {fileID: 5495983137148109324}
-  _progressBar: {fileID: 1154365355205238534}
+  _loaderCanva: {fileID: 0}
+  _progressBar: {fileID: 0}
 --- !u!1 &8428660809612620762
 GameObject:
   m_ObjectHideFlags: 0
