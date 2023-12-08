@@ -8,6 +8,21 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Accueil.unity
     guid: 99c9720ab356a0642a771bea13969a05
+  - enabled: 1
+    path: Assets/Scenes/Exterieur.unity
+    guid: 380f63b74dcdc4f4b9e53697fa424673
+  - enabled: 1
+    path: Assets/Scenes/Maison1.unity
+    guid: 9f36461bcb312b849a74cccc5ec9b230
+  - enabled: 1
+    path: Assets/Scenes/Maison2.unity
+    guid: e059e93e037b5f449bd3e11972e68aa6
+  - enabled: 1
+    path: Assets/Scenes/Maison3.unity
+    guid: c55f84ded92b5ae43aa62eab81a39e8b
+  - enabled: 1
+    path: Assets/Scenes/Fin.unity
+    guid: 21d7c6c4eef1d164bb085a675734e7dd
   m_configObjects:
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 54703999312928141944e568478352e7,
       type: 2}
