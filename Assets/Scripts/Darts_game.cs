@@ -15,8 +15,14 @@ public class Darts_game : MonoBehaviour
     [SerializeField] private GameObject zone10bas;
     [SerializeField] private GameObject zone30centre;
 
+    //A faire
+    //Reset la position du dart quand il touche une zone, un mur ou le sol
+    //Ajouter les points au joueur
+    //Faire que apres 50 points on fini le mini-jeu
+
     //Prend la collision d'un trigger
     private void OnTriggerEnter(Collider other){
+        // Vérifie quel objet a déclenché le script
         if(this.gameObject == zone1gauche|| this.gameObject == zone1droite){
             Debug.Log("1 Points!");
         }

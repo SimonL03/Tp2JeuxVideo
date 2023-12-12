@@ -7,6 +7,7 @@ public class InfosJoueurs : ScriptableObject
 {
     [Header("Points du joueur")]
     public int nbPointsDarts;
+    public int nbPointsDartsGagner;
     public int nbTempsRestant;
     public int nbTempsInitial;
 
@@ -15,5 +16,6 @@ public class InfosJoueurs : ScriptableObject
         nbPointsDarts = 0;
         nbTempsRestant = 0;
         nbTempsInitial = 0;
+        nbPointsDartsGagner = 50;
     }
 }
