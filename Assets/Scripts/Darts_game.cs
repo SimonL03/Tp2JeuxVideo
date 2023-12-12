@@ -14,6 +14,7 @@ public class Darts_game : MonoBehaviour
     [SerializeField] private GameObject zone10haut;
     [SerializeField] private GameObject zone10bas;
     [SerializeField] private GameObject zone30centre;
+    [SerializeField] private GameObject dart;
 
     //A faire
     //Reset la position du dart quand il touche une zone, un mur ou le sol
