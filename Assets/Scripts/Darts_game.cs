@@ -54,5 +54,8 @@ public class Darts_game : MonoBehaviour
         if(this.gameObject == zoneEchec){
             dart.transform.position = new Vector3 (0,0,0);
         }
+        if(_infosDarts.nbPointsDarts == 50){
+            Debug.Log("Vous êtes le gagner! (La faute de français est nécessaire)");
+        }
     }
 }
