@@ -14,7 +14,9 @@ public class Darts_game : MonoBehaviour
     [SerializeField] private GameObject zone10haut;
     [SerializeField] private GameObject zone10bas;
     [SerializeField] private GameObject zone30centre;
+    [SerializeField] private GameObject zoneEchec;
     [SerializeField] private GameObject dart;
+    [SerializeField] private InfosDarts _infoDarts;
 
     //A faire
     //Reset la position du dart quand il touche une zone, un mur ou le sol
@@ -26,18 +28,31 @@ public class Darts_game : MonoBehaviour
         // Vérifie quel objet a déclenché le script
         if(this.gameObject == zone1gauche|| this.gameObject == zone1droite){
             Debug.Log("1 Points!");
+            _infoDarts.nbPointsDarts += 1;
+            dart.transform.position = new Vector3 (0,0,0);
         }
         if(this.gameObject == zone2haut|| this.gameObject == zone2bas){
             Debug.Log("2 Points!");
+            _infoDarts.nbPointsDarts += 2;
+            dart.transform.position = new Vector3 (0,0,0);
         }
         if(this.gameObject == zone5gauche|| this.gameObject == zone5droite){
             Debug.Log("5 Points!");
+            _infoDarts.nbPointsDarts += 5;
+            dart.transform.position = new Vector3 (0,0,0);
         }
         if(this.gameObject == zone10haut|| this.gameObject == zone10bas){
             Debug.Log("10 Points!");
+            _infoDarts.nbPointsDarts += 10;
+            dart.transform.position = new Vector3 (0,0,0);
         }
         if(this.gameObject == zone30centre){
             Debug.Log("30 Points!");
+            _infoDarts.nbPointsDarts += 30;
+            dart.transform.position = new Vector3 (0,0,0);
+        }
+        if(this.gameObject == zoneEchec){
+            dart.transform.position = new Vector3 (0,0,0);
         }
     }
 }
