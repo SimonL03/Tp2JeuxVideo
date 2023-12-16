@@ -17,6 +17,7 @@ public class Darts_game : MonoBehaviour
     [SerializeField] private GameObject zoneEchec;
     [SerializeField] private GameObject dart;
     [SerializeField] private InfosDarts _infoDarts;
+    [SerializeField] private InfosNiveau _infoNiveau;
 
     //A faire
     //Reset la position du dart quand il touche une zone, un mur ou le sol
@@ -54,8 +55,9 @@ public class Darts_game : MonoBehaviour
         if(this.gameObject == zoneEchec){
             dart.transform.position = new Vector3 (0,1,0);
         }
-        if(_infoDarts.nbPointsDarts == 50){
+        if(_infoDarts.nbPointsDarts >= _infoDarts.nbPointsDartsGagner){
             Debug.Log("Vous êtes le gagner! (La faute de français est nécessaire)");
+            _infoNiveau.nbMiniJeuxTerminer++;
         }
     }
 }
