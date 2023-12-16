@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4095ce64bafcfc347b4f026cb00230f5, type: 3}
   m_Name: InfosPanier
   m_EditorClassIdentifier: 
-  nbPointsPanier: 0
-  nbPointsPanierGagner: 0
+  nbPointsPanier: 1
+  nbPointsPanierGagner: 7

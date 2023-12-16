@@ -12,7 +12,7 @@ public class Basket_Game : MonoBehaviour
         // Vérifie quel objet a déclenché le script
         if(this.gameObject == _Panier){
             Debug.Log("1 Points!");
-            _infosPanier.nbPointsPanierGagner += 1;
+            _infosPanier.nbPointsPanier += 1;
            
         }
     }
