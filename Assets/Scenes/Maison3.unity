@@ -55500,6 +55500,8 @@ GameObject:
   - component: {fileID: 2135147806}
   - component: {fileID: 2135147805}
   - component: {fileID: 2135147807}
+  - component: {fileID: 2135147809}
+  - component: {fileID: 2135147808}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -55550,6 +55552,63 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _infosNiveau: {fileID: 11400000, guid: b7479c3a54c7b5e4eb8289bdd35f8dd1, type: 2}
   _levelManager: {fileID: 266505637}
+--- !u!114 &2135147808
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2135147804}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ae37cc101a477645a75c585b5a6ed99, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _infosNiveau: {fileID: 11400000, guid: b7479c3a54c7b5e4eb8289bdd35f8dd1, type: 2}
+  _champTexteTemps: {fileID: 1740419759}
+--- !u!114 &2135147809
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2135147804}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d571b5343b0c9eb4fb4a3063939167f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _infosNiveau: {fileID: 11400000, guid: b7479c3a54c7b5e4eb8289bdd35f8dd1, type: 2}
+  auChangementDuTemps:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2135147808}
+        m_TargetAssemblyTypeName: AfficherDecompte, Assembly-CSharp
+        m_MethodName: AfficherTemps
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  aLaFinDuTemps:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 266505637}
+        m_TargetAssemblyTypeName: LevelManager, Assembly-CSharp
+        m_MethodName: LoadScene
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Fin
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &2135850835 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 199408, guid: cb8a994b910fa884b84b5d1b5d595858,
