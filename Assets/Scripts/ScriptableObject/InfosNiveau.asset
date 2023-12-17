@@ -13,3 +13,5 @@ MonoBehaviour:
   m_Name: InfosNiveau
   m_EditorClassIdentifier: 
   nbMiniJeuxTerminer: 0
+  temps: 600
+  tempsInitial: 600

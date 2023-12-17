@@ -6,9 +6,13 @@ using UnityEngine;
 public class InfosNiveau : ScriptableObject
 {
     public int nbMiniJeuxTerminer;
+    public float temps;
+    public float tempsInitial;
 
     private void onEnable()
     {
         nbMiniJeuxTerminer = 0;
+        temps = 0;
+        tempsInitial = 600;
     }
 }
