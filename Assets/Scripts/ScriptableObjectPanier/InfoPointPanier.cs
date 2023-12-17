@@ -10,6 +10,6 @@ public class InfoPointPanier : ScriptableObject
     private void onEnable()
     {
         nbPointsPanier = 0;
-        nbPointsPanierGagner = 3;
+        nbPointsPanierGagner = 10;
     }
 }
