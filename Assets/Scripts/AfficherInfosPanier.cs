@@ -19,7 +19,7 @@ public class AfficherInfosPanier : MonoBehaviour
 
     void Update()
     {
-        _nbPointsText.text ="Panier"+ _infosPanier.nbPointsPanier.ToString();
+        _nbPointsText.text =_infosPanier.nbPointsPanier.ToString();
     }
 }
 

@@ -8,7 +8,7 @@ public class Basket_Game : MonoBehaviour
     [SerializeField] private InfoPointPanier _infosPanier;
     [SerializeField] private GameObject _Panier;
     // Start is called before the first frame update
-      private void OnCollisionEnter(Collision other){
+      private void OnTriggerEnter(Collider other){
         // Vérifie quel objet a déclenché le script
         if(this.gameObject == _Panier){
             Debug.Log("1 Points!");
