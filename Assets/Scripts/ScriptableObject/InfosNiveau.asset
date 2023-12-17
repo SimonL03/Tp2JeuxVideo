@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f15bd7bc2fa59f4aaa3e1f3368d5296, type: 3}
   m_Name: InfosNiveau
   m_EditorClassIdentifier: 
-  nbMiniJeuxTerminer: 0
-  temps: 600
+  nbMiniJeuxTerminer: 1
+  temps: 245.25145
   tempsInitial: 600
