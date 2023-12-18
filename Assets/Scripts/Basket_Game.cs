@@ -7,13 +7,19 @@ public class Basket_Game : MonoBehaviour
     [SerializeField] private GameObject _Ballon;
     [SerializeField] private InfoPointPanier _infosPanier;
     [SerializeField] private GameObject _Panier;
+    [SerializeField] private InfosNiveau _infoNiveau;
     // Start is called before the first frame update
       private void OnTriggerEnter(Collider other){
         // Vérifie quel objet a déclenché le script
-        if(this.gameObject == _Panier){
-            Debug.Log("1 Points!");
+        if(this.gameObject == _Panier)
+        {
             _infosPanier.nbPointsPanier += 1;
            
         }
-    }
+    
+        if (_infosPanier.nbPointsPanier >= _infosPanier.nbPointsPanierGagner){
+            _infoNiveau.nbMiniJeuxTerminer++;
+            
+        }
+      }
 }
