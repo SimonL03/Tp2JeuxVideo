@@ -18,7 +18,6 @@ public class Basket_Game : MonoBehaviour
         }
     
         if (_infosPanier.nbPointsPanier >= _infosPanier.nbPointsPanierGagner){
-            _infoNiveau.nbMiniJeuxTerminer++;
                 if(_infoNiveau.basketTerminer == 0){
                 _infoNiveau.nbMiniJeuxTerminer++;
                 _infoNiveau.basketTerminer +=1;

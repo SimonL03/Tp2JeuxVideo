@@ -10,7 +10,7 @@ public class VerificationMiniJeuxTerminer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(_infosNiveau.nbMiniJeuxTerminer == 3){
+        if(_infosNiveau.nbMiniJeuxTerminer >= 3){
             _levelManager.LoadScene("Fin");
         }
     }
