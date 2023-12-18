@@ -15,7 +15,7 @@ public class DisableGift : MonoBehaviour
 
     // Update is called once per frame
     private void OnTriggerEnter(Collider other) {
-         (_gift.GetComponent(typeof(BoxCollider)) as Collider).isTrigger = false;
-         _rb.isKinematic = true;
+         _rb.useGravity = false;
+         _rb.detectCollisions = false;
     }
 }
