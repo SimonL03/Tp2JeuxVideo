@@ -1,12 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class CollisionRedGifts : MonoBehaviour
 {
-    [SerializeField] GameObject ZoneRedBowGift;
+    [SerializeField] private GameObject ZoneRedBowGift;
     [SerializeField] private InfosGifts _infosGifts;
     [SerializeField] private int _nbPoints;
+    [SerializeField] private TMP_Text _textPointsGifts;
     [SerializeField] private AudioClip _placeGift;
      private AudioSource audioSource;
     private Vector3 _positionSpot;
@@ -15,6 +17,9 @@ public class CollisionRedGifts : MonoBehaviour
     {
         _positionSpot = ZoneRedBowGift.transform.position;
         audioSource = GetComponent<AudioSource>(); 
+    }
+    void Update(){
+       _textPointsGifts.text = _infosGifts.nbPointsGifts.ToString();
     }
 
     // Update is called once per frame

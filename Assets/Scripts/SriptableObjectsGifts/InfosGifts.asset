@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24131f21261f35f4b8e91c4199524f4d, type: 3}
   m_Name: InfosGifts
   m_EditorClassIdentifier: 
-  nbPointsGifts: 4
+  nbPointsGifts: 10
