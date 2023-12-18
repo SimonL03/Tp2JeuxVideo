@@ -9,6 +9,6 @@ PhysicMaterial:
   m_Name: BallonBaket
   dynamicFriction: 0.75
   staticFriction: 1.05
-  bounciness: 0.78
+  bounciness: 0.53
   frictionCombine: 0
   bounceCombine: 3

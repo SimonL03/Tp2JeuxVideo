@@ -52,7 +52,7 @@ public void LoadExterieur(){
     
 
     public void LoadMainMenu(){
-        SceneManager.LoadScene("MainMenu");
+        SceneManager.LoadScene("Accueil");
     }
 
     public void QuitGame(){
