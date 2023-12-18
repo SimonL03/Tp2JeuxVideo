@@ -20,6 +20,10 @@ public class ResetInfosStart : MonoBehaviour
         _infosNiveau.nbMiniJeuxTerminer = 0;
         _infosNiveau.tempsInitial = 600;
         _infosNiveau.temps = _infosNiveau.tempsInitial;
+        _infosNiveau.dartTerminer = 0;
+        _infosNiveau.basketTerminer = 0;
+        _infosNiveau.giftTerminer = 0;
+        _infosNiveau.exterieurTerminer = 0;
 
         _infosJoueur.nbCleATrouver = 0; //A changer?
 
