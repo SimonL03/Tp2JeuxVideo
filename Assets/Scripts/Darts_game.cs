@@ -57,8 +57,10 @@ public class Darts_game : MonoBehaviour
         }
         if(_infoDarts.nbPointsDarts >= _infoDarts.nbPointsDartsGagner){
             Debug.Log("Vous êtes le gagner! (La faute de français est nécessaire)");
-            _infoNiveau.nbMiniJeuxTerminer++;
-            Destroy(dart);
+            if(_infoNiveau.dartTerminer == 0){
+                _infoNiveau.nbMiniJeuxTerminer++;
+                _infoNiveau.dartTerminer +=1;
+            }
         }
     }
 }
